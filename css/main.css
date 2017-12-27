@@ -1,0 +1,40 @@
+/* reutilizables */
+.container-flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2em;
+}
+  
+.vh100 {
+  height: 100vh;
+}
+
+/* estilos para el index */
+.grad-pink {
+  background: linear-gradient(rgb(80, 7, 102)20%,rgb(212, 22, 187) );
+}
+
+.img-logo {
+width: 210px;
+}
+
+/* estilos para el singUp */
+.body-singup {
+  background-image: url('../assets/img/fondo.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.logo-small {
+  width: 70px;
+}
+.btn-singup {
+  border: 1px solid white;
+  background-color: transparent;
+  align-self: flex-end;
+  color: white;
+}
+
+.vh80 {
+  height: 85vh;
+}
