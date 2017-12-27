@@ -56,12 +56,12 @@ width: 210px;
 
 /* estilos para singUp One */
 .color {
-  color: rgb(122, 119, 119);
+  color: rgb(104, 101, 101);
 }
 
 .btn-next {
   background-color: rgb(150, 144, 144);
-  color:rgb(95, 91, 91);
+  color:rgb(73, 72, 72);
   width: 100%;
   padding: 18px;
   font-size: 18px;
@@ -75,11 +75,11 @@ width: 210px;
 
 .btn-previuw {
   border-radius: 50px;
-  padding: 10px;
-  color: rgb(95, 92, 92);
+  padding: 8px;
+  color: rgb(73, 73, 73);
   border: 2px rgb(77, 75, 75) solid;
   position: relative;
-  top: 40px;
+  top: 45px;
 }
 
 .select{
@@ -92,4 +92,34 @@ width: 210px;
   border: 2px rgb(77, 75, 75) solid;
   position: relative;
   right: 5px;
+}
+
+/* estilo de modal */
+.modal-dialog {
+  position: relative;
+  top: 40%;
+}
+.modal-content{
+  background-color: rgb(219, 222, 223);
+  border:none;
+  height: 120px;
+}
+
+/* estilos para singup-two */
+.cod {
+  border: none;
+  border-bottom: 2px solid rgb(119, 9, 104);
+  width: 15%;
+}
+
+.btn-resend {
+  background-color: rgb(202, 200, 200);
+  color: rgb(107, 105, 105);
+  border: none;
+  padding: 14px;
+  font-size: 
+}
+.container-flex {
+  position: relative;
+  top: 35vh;
 }
