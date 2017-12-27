@@ -24,9 +24,15 @@
   padding-bottom: 21px;
 }
 
+/* estilo para el boton activado */
+.btn-grad {
+  background: linear-gradient(rgb(131, 7, 114)10%,rgb(212, 22, 187) );
+  color: white !important;
+}
+
 /* estilos para el index */
 .grad-pink {
-  background: linear-gradient(rgb(80, 7, 102)20%,rgb(212, 22, 187) );
+  background: linear-gradient(rgb(102, 8, 82)10%,rgb(212, 22, 187) );
 }
 
 .img-logo {
@@ -124,6 +130,10 @@ width: 210px;
 }
 
 /* vista registro de datos */
+::placeholder{
+color: rgb(203, 207, 207);
+}
+
 .color-blue {
 color: blue;
 }

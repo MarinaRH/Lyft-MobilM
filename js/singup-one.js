@@ -7,7 +7,8 @@ $(document).ready(function(){
     if ($(this).val().length ==10){
       $('#text').hide();
       $btn.attr('disabled',false);
-      $btn.css('background-color', 'rgb(233, 4, 150)');
+      $btn.addClass('btn-grad')
+
     }else{
       $('#text').show();
       $btn.attr('disabled',true);
