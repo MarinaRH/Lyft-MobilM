@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   font-size: 16px;
+  color: rgb(104, 101, 101);
 }
 /* reutilizables */
 .container-flex-column {
@@ -48,16 +49,15 @@ width: 210px;
   background-color: transparent;
   align-self: flex-end;
   color: white;
+  padding: 21px 30px;
+  font-size: 18px;
 }
 
 .vh80 {
-  height: 85vh;
+  height: 75vh;
 }
 
 /* estilos para singUp One */
-.color {
-  color: rgb(104, 101, 101);
-}
 
 .btn-next {
   background-color: rgb(150, 144, 144);
@@ -69,7 +69,6 @@ width: 210px;
 
 .btn-next:hover , .btn-previuw:hover{
   background-color: rgb(233, 4, 164);
-  color: white;
   border:none;
 }
 
@@ -89,7 +88,7 @@ width: 210px;
 
 .input{
   padding: 20px;
-  border: 2px rgb(77, 75, 75) solid;
+  border: 2px rgb(100, 98, 98) solid;
   position: relative;
   right: 5px;
 }
@@ -117,9 +116,42 @@ width: 210px;
   color: rgb(107, 105, 105);
   border: none;
   padding: 14px;
-  font-size: 
+  font-size: 16px;
 }
 .container-flex {
   position: relative;
-  top: 35vh;
+  top: 30vh;
+}
+
+/* vista registro de datos */
+.color-blue {
+color: blue;
+}
+
+.input-name{
+  width: 50%;
+  border: none;
+}
+
+.border {
+  border:none;
+}
+
+.input-group-addon  {
+  background-color: white;
+  border:none;
+}
+
+.input-group {
+  border: 2px solid rgb(211, 208, 208);
+  border-radius: 7px;
+}
+
+.border-left {
+  border-left: 2px solid rgb(216, 214, 214);
+  padding: 10px;
+}
+
+input.left , span.left {
+  margin-left: 18px;
 }
