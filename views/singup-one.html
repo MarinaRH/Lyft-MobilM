@@ -32,13 +32,29 @@
             <input class="input" type="text">
           </div >
           <p class="text-center padding-top">We'll send a text to verify your phone</p>
-          <a href="singup-two.html" type="button" class="btn btn-default btn-next weight">NEXT</a>
+          <a data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" class="btn btn-default btn-next weight" disabled>NEXT</a>
         </div>
       </div>
     </div>
+  <!-- inicio modal de  number aletori -->
+    <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog " role="document">
+        <div class="modal-content ">
+          <div class="modal-body">
+            <div class="modal-Ok">
+              <p class="weight">Tu código:<span></span></p>
+              <div class="text-right">
+                <a href="singup-two.html" type="button" class="btn btn-default weight">OK</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- fin del modal -->
   </main>
-	<script src="../vendors/bootstrap/js/bootstrap.min.js"></script>
 	<script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
+	<script src="../vendors/bootstrap/js/bootstrap.min.js"></script>
 	<script src="../js/singup.js"></script>
 </body>
 </html>
