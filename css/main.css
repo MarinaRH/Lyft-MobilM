@@ -24,6 +24,10 @@
   padding-bottom: 21px;
 }
 
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background: rgb(223, 220, 220);
+}
 /* estilo para el boton activado */
 .btn-grad {
   background: linear-gradient(rgb(131, 7, 114)10%,rgb(212, 22, 187) );
