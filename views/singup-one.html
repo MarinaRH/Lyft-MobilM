@@ -24,15 +24,16 @@
           <hr>
           <div class="text-center padding-top">
             <select class="select">
-              <option value="img src='../assets/img/mexico.jpg'"></option>
-              <option value="">hhh</option>
-              <option value="">h</option>
-              <option value="">vv</option>
+              <option value="img src='../assets/img/mexico.jpg'">Mexico</option>
+              <option value="">peru</option>
+              <option value="">colombia</option>
+              <option value="">EEUU</option>
             </select>
             <input class="input" id="codigo" type="text">
           </div>
           <p class="text-center padding-top" id="text">We'll send a text to verify your phone</p><br>
-          <button data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" class="btn btn-default btn-next weight" id="btn-cod" disabled>NEXT</button>
+          <input id="rr" min="100" max="999" value="999" class="hide"><span id="n_range" class="hide" ></span>
+          <button type="button" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" class="btn btn-default btn-next weight" id="btn-cod" disabled>NEXT</button>
         </div>
       </div>
     </div>
@@ -42,7 +43,7 @@
         <div class="modal-content ">
           <div class="modal-body">
             <div class="modal-Ok">
-              <p class="weight">Tu código:<span></span></p>
+              <p class="weight">Tu codigo: LAB.<span id="result_random"></span></p>
               <div class="text-right">
                 <a href="singup-two.html" type="button" class="btn btn-info weight">OK</a>
               </div>
@@ -51,7 +52,7 @@
         </div>
       </div>
     </div>
-    <!-- fin del modal -->
+  <!-- fin del modal -->
   </main>
 	<script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
   <script src="../vendors/bootstrap/js/bootstrap.min.js"></script>

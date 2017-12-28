@@ -15,4 +15,14 @@ $(document).ready(function(){
     }
 
   })
+  // codigo aleatorio
+  $(":input").change(function(){
+    $("#n_range").html($("#rr").val());
+    });
+    
+    $btn.click(function(){
+    rand = Math.floor((Math.random()*$("#rr").val())+1);
+    $("#result_random").html(rand);
+    });
+
 });
