@@ -4,7 +4,9 @@
   font-size: 16px;
   color: rgb(104, 101, 101);
 }
+
 /* reutilizables */
+
 .container-flex-column {
   display: flex;
   flex-direction: column;
@@ -25,29 +27,34 @@
 }
 
 /* estilo para el boton activado */
+
 .btn-grad {
   background: linear-gradient(to bottom right, rgb(223, 12, 110)20%, rgb(125, 6, 141));
   color: white !important;
 }
 
 /* estilos para el index */
+
 .grad-pink {
   background: linear-gradient(to bottom right, rgb(125, 6, 141)20%, rgb(223, 12, 110));
 }
 
 .img-logo {
-width: 210px;
+  width: 290px;
 }
 
 /* estilos para el singUp */
+
 .body-singup {
-  background-image: url('../assets/img/fondo.gif');
+  background-image: url('../assets/img/conduce.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position:  bottom;
+  background-size:cover;
+  
 }
 
 .logo-small {
-  width: 70px;
+  width: 100px;
 }
 
 .btn-singup {
@@ -60,10 +67,11 @@ width: 210px;
 }
 
 .vh80 {
-  height: 75vh;
+  height: 70vh;
 }
 
 /* estilos para singUp One */
+
 .btn-next {
   background-color: rgb(150, 144, 144);
   color:rgb(73, 72, 72);
@@ -131,11 +139,11 @@ width: 210px;
 
 /* vista registro de datos */
 ::placeholder{
-color: rgb(203, 207, 207);
+  color: rgb(203, 207, 207);
 }
 
 .color-blue {
-color: blue;
+  color: blue;
 }
 
 .input-name{
@@ -162,6 +170,10 @@ color: blue;
   padding: 10px;
 }
 
-input.left , span.left {
+input.left ,span.left {
   margin-left: 18px;
+}
+
+.img-check {
+  width: 30vh;
 }

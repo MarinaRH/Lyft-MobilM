@@ -7,17 +7,14 @@ $(document).ready(function(){
   $codigo.on('input',function(event){
     this.value =this.value.replace(/[^0-9]/g,'');
     if($(this).val().length ==10) {
-      $('#text').hide();
       $btn.attr('disabled',false);
       $btn.addClass('btn-grad')
-
     }else{
-      $('#text').show();
       $btn.attr('disabled',true);
     }
   })
 
-  // codigo aleatorio
+  // generar codigo aleatorio
   $(":input").change(function(){
     $("#n_range").html($("#rr").val());
   });
