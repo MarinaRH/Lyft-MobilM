@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function(){  
   var $codigo=$('#codigo');
   var $btn = $('#btn-cod')
 
