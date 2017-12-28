@@ -4,8 +4,9 @@ $(document).ready(function(){
   var $random = $("#result_random");
 
 // funcion habilitar y desabilitar button
-  $codigo.on('input',function(){
-    if ($(this).val().length == 10){
+  $codigo.on('input',function(event){
+    this.value =this.value.replace(/[^0-9]/g,'');
+    if($(this).val().length ==10) {
       $('#text').hide();
       $btn.attr('disabled',false);
       $btn.addClass('btn-grad')

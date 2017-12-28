@@ -10,6 +10,8 @@ $(document).ready(function(){
   })
   
   $input.on('input',function(){
+    // validando que solo se ingrese numeros
+    this.value =this.value.replace(/[^0-9]/);
     if($(this).val().length<=3){
       $btnCod.attr('disabled', false);
       $btnCod.addClass('btn-grad');
