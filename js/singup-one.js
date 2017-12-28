@@ -1,10 +1,11 @@
 $(document).ready(function(){  
   var $codigo=$('#codigo');
-  var $btn = $('#btn-cod')
+  var $btn = $('#btn-cod');
+  var $random = $("#result_random");
 
 // funcion habilitar y desabilitar button
   $codigo.on('input',function(){
-    if ($(this).val().length ==10){
+    if ($(this).val().length == 10){
       $('#text').hide();
       $btn.attr('disabled',false);
       $btn.addClass('btn-grad')
@@ -13,16 +14,16 @@ $(document).ready(function(){
       $('#text').show();
       $btn.attr('disabled',true);
     }
-
   })
+
   // codigo aleatorio
   $(":input").change(function(){
     $("#n_range").html($("#rr").val());
-    });
+  });
     
-    $btn.click(function(){
+  $btn.click(function(){
     rand = Math.floor((Math.random()*$("#rr").val())+1);
-    $("#result_random").html(rand);
-    });
+    $random.html(rand);
+  });
 
 });
