@@ -1,8 +1,14 @@
 $(document).ready(function(){  
+  try {
+    $("body select").msDropDown();
+  } catch(e) {
+    alert(e.message);
+  }
+
   var $codigo=$('#codigo');
   var $btn = $('#btn-cod');
   var $random = $("#result_random");
-
+  
 // funcion habilitar y desabilitar button
   $codigo.on('input',function(event){
     this.value =this.value.replace(/[^0-9]/g,'');
@@ -23,5 +29,4 @@ $(document).ready(function(){
     rand = Math.floor((Math.random()*$("#rr").val())+1);
     $random.html(rand);
   });
-
 });

@@ -26,6 +26,9 @@
   padding-bottom: 21px;
 }
 
+.inline {
+  display: inline-flex;
+}
 /* estilo para el boton activado */
 
 .btn-grad {
@@ -70,7 +73,7 @@
   height: 70vh;
 }
 
-/* estilos para singUp One */
+/* estilos para singUp-One */
 
 .btn-next {
   background-color: rgb(150, 144, 144);
@@ -100,10 +103,38 @@
 }
 
 .input{
-  padding: 20px;
+  padding: 9px 0;
   border: 2px rgb(100, 98, 98) solid;
   position: relative;
   right: 5px;
+}
+
+input#codigo{
+  width: 100px;
+}
+
+/* estilos para los input de bandera */
+
+.right-select {
+  float: right !important;
+}
+
+.left-input {
+  float: left !important;
+}
+
+div.col-xs-6 {
+  padding: 0;
+}
+
+.dd .ddTitle {
+  height: 44px;
+  border: 2px rgb(100, 98, 98) solid;
+  background-color:white;
+}
+
+.dd .ddChild a img {
+  width: 30px;
 }
 
 /* estilo de modal */
@@ -137,7 +168,7 @@
   top: 30vh;
 }
 
-/* vista registro de datos */
+/* vista registro de datos  sing-tree*/
 ::placeholder{
   color: rgb(203, 207, 207);
 }
