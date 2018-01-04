@@ -8,6 +8,23 @@ $(document).ready(function(){
   var $codigo=$('#codigo');
   var $btn = $('#btn-cod');
   var $random = $("#result_random");
+
+// generar codigo de pais
+  $('#webmenu').on('change', function() {
+    switch (true) {
+    case ($(this).val() === 'mexico'):
+      $codigo.val('+51');
+      break;
+    case ($(this).val() === 'ecuador'):
+      $codigo.val('+593');
+      break;
+    case ($(this).val() === 'eeuu'):
+      $codigo.val('+59');
+      break;
+    default:
+      $codigo.val('+1');
+    }
+  });
   
 // funcion habilitar y desabilitar button
   $codigo.on('input',function(event){
@@ -21,12 +38,10 @@ $(document).ready(function(){
   })
 
   // generar codigo aleatorio
-  $(":input").change(function(){
-    $("#n_range").html($("#rr").val());
+  $('#btn-cod').on('click', function() {
+    localStorage.labCode = 'LAB-' + parseInt(Math.random() * 1000);
+    $random.html(localStorage.labCode);
+    localStorage.telephone = $('#codigo').val();
   });
-    
-  $btn.click(function(){
-    rand = Math.floor((Math.random()*$("#rr").val())+1);
-    $random.html(rand);
-  });
+  
 });

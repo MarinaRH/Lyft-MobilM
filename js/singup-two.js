@@ -2,17 +2,13 @@ $(document).ready(function(){
   var $resend=$('#resend');
   var $input=$('#cod-lab');
   var $btnCod=$('#btn-codAle');
+  var $random = $("#result_random");
+  var $number =$('#number-country');
   
-  $resend.on('click',function(){
-    if($input.val('')){
-      $btnCod.attr('disabled', true);
-    }
-  })
-  
+  $number.html(localStorage.telephone);
   $input.on('input',function(){
-    // validando que solo se ingrese numeros
-    this.value =this.value.replace(/[^0-9]/);
-    if($(this).val().length<=3){
+    // validando que coincida el codigo
+    if(('LAB-' + $(this).val()) === localStorage.labCode){
       $btnCod.attr('disabled', false);
       $btnCod.addClass('btn-grad');
     }else {
@@ -20,9 +16,13 @@ $(document).ready(function(){
     }
   });
 
+  $resend.on('click',function(){
+    localStorage.labCode = 'LAB-' + parseInt(Math.random() * 1000);
+    $random.html(localStorage.labCode);
+  })
+
   $btnCod.on('click', function(event) {
-    event.preventDefault();
-    window.location.href ='singup-tree.html';
+    $(location).attr('href', 'singup-tree.html');
   });
   
 });
